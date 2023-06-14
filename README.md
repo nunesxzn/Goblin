@@ -1,1 +1,1 @@
-# Goblin
+# JJ Coins
