@@ -2,22 +2,176 @@
 <html lang="pt-br">
 <head>
     <link rel="stylesheet" href="/estilos/styles.css">
-    <title>JJ | INICIO</title>
+    <link rel="stylesheet" href="/estilos/css.css">
+    <title>Document</title>
 </head>
-<body class="corpo">
-    <a class="inicio_logo"  href="index.html" ><img src="/imagens/pngwing.com.png" width="200px" alt=""></a>
+<body class="corpo1" style="background-color: black;">
+    <div  class="valorant_cabecario">
+      <div>
+         <nav class="valorant_navs1">
+             <a href="" style="color: aliceblue;">INICIO</a>
+             <a href="" style="color: aliceblue;">QUEM SOMOS</a>
+             <a href="https://wa.me/5511988014096" style="color: aliceblue;">SUPORTE</a>
+         </nav>
+     </div>
+     <div>
+         <a href="/index/valorant.html"><img src="/imagens/valorant_logo.png" width="100px" alt=""></a>  
+     </div>
+     <div>
+         <nav class="valorant_navs2">
+             <a href="https://www.instagram.com/valesportsbrasil/" style="color: aliceblue;">INSTAGRAM</a>
+             <a href="https://www.youtube.com/@valorantesportsbr/videos" style="color: aliceblue;">VALORANT BRASIL</a>
+         </nav>
+     </div>
+    </div>
+<div class="lgo">
+    <img width="400px" src="/imagens/logo.png" alt="">
+</div>
 </body>
-<section>
-    <h1 class="texto">
-        ESCOLHA O JOGO QUE DESEJA RECARREGAR ABAIXO:
+<h1 style="display: flex; justify-content: center; padding: 10px;">
+    TRAILER: ATO 5
+</h1>
+<div class="video_inicio">
+    <video width="800px" height="800px" controls muted autoplay src="/imagens/VALORANT MERGULHE DE CABEÇA - Estreia do Episódio 5 Ato I.mp4"></video>
+</div>
+<h1 style="display: flex; justify-content: center; padding: 10px;">
+    FAÇA SEU CADASTRO PARA RECEBER SEUS COINS
+</h1>
+<div class="container">
+
+    <div class="card-container">
+
+        <div class="front">
+            <div class="image">
+                <img src="image/chip.png" alt="">
+                <img src="image/visa.png" alt="">
+            </div>
+            <div class="card-number-box">################</div>
+            <div class="flexbox">
+                <div class="box">
+                    <span>numero do cartão</span>
+                    <div class="card-holder-name">nome completo</div>
+                </div>
+                <div class="box">
+                    <span>expiração</span>
+                    <div class="expiration">
+                        <span class="exp-month">mm</span>
+                        <span class="exp-year">yy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="back">
+            <div class="stripe"></div>
+            <div class="box">
+                <span>cvv</span>
+                <div class="cvv-box"></div>
+                <img src="image/visa.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <form action="">
+        <div class="inputBox">
+            <span>numero do cartão</span>
+            <input type="text" maxlength="16" class="card-number-input">
+        </div>
+        <div class="inputBox">
+            <span>NICK NO JOGO</span>
+            <input type="text" class="card-holder-input">
+        </div>
+        <div class="flexbox">
+            <div class="inputBox">
+                <span>mês</span>
+                <select name="" id="" class="month-input">
+                    <option value="month" selected disabled>MÊS</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+            <div class="inputBox">
+                <span>ano</span>
+                <select name="" id="" class="year-input">
+                    <option value="year" selected disabled>ANO</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                </select>
+            </div>
+            <div class="inputBox">
+                <span>cvv</span>
+                <input type="text" maxlength="4" class="cvv-input">
+            </div>
+        </div>
+        <input type="submit" value="submit" class="submit-btn">
+    </form>
+
+</div>    
+    
+
+
+
+
+
+<script>
+
+document.querySelector('.card-number-input').oninput = () =>{
+    document.querySelector('.card-number-box').innerText = document.querySelector('.card-number-input').value;
+}
+
+document.querySelector('.card-holder-input').oninput = () =>{
+    document.querySelector('.card-holder-name').innerText = document.querySelector('.card-holder-input').value;
+}
+
+document.querySelector('.month-input').oninput = () =>{
+    document.querySelector('.exp-month').innerText = document.querySelector('.month-input').value;
+}
+
+document.querySelector('.year-input').oninput = () =>{
+    document.querySelector('.exp-year').innerText = document.querySelector('.year-input').value;
+}
+
+document.querySelector('.cvv-input').onmouseenter = () =>{
+    document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(-180deg)';
+    document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(0deg)';
+}
+
+document.querySelector('.cvv-input').onmouseleave = () =>{
+    document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(0deg)';
+    document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(180deg)';
+}
+
+document.querySelector('.cvv-input').oninput = () =>{
+    document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
+}
+</script>
+<div style="display: flex; justify-content: center; padding: 10px;">
+    <h1 style="color: white;">
+        ÚLTIMAS NOTÍCIAS!
     </h1>
-</section>
-<div class="flex">
-    <section>
-        <a class="valorant"  href="valorant.html" ><img src="/imagens/valorant.jpg" width="200px" alt=""></a>
-    </section>
-    <section>
-        <a class="lol"  href="lol.html" ><img src="/imagens/lol.jpg" width="200px" alt=""></a>
-    </section>
+</div>
+<div class="ultimas_noticias">
+    <a href="https://www.youtube.com/shorts/qGOnq-CcjPQ"><img src="/imagens/Screenshot_48.png" width="387px" alt=""></a>
+    <a href="https://www.youtube.com/watch?v=9v6P7Tkd30A"><img src="/imagens/Screenshot_46.png" alt=""></a>
+    <a href="https://www.twitch.tv/valorant_br"><img src="/imagens/Screenshot_47.png" alt=""></a>
 </div>
 </html>
